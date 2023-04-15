@@ -193,7 +193,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--main-title-color);
-  background-color: #4d5ae5;
+  background-color: var(--btn-color);
   cursor: pointer;
   border-radius: 4px;
   border: none;
@@ -617,6 +617,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
+/* Backdrop */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -755,6 +758,10 @@ body {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-check {
+  margin-bottom: 24px;
+}
+
 .check-text {
   display: flex;
   font-weight: 400;
@@ -799,9 +806,28 @@ body {
   text-decoration-line: underline;
 }
 
-/* .modal-close-btn:active {
-        background-color: var(--ocean-bgc-hover-focus-active-color);
+.modal-form-btn {
+  display: flex;
+  width: 169px;
+  height: 56px;
+  background-color: var(--btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-self: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: var(--btn-one-color);
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+  transition: background-color var(--transition);
 }
-.modal-close-btn:focus-within .modal-close {
-        fill: var(--white-bgc-header-teamcard-color);
-} */
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--hover-focus-color);
+}
